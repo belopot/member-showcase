@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    
+        <title>3D data visualization</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+        <meta name="description" content="V/R demo">
+        <meta name="author" content="Chan Chi-Loong">
+        
+        <link rel="stylesheet" href="css/main.css" type="text/css">
+        <link rel="stylesheet" href="css/jquery.auto-complete.css" type="text/css">
+        
+    </head>
+    <body>
+    
+        <div class="toggle-button">
+            <svg id="toggle" viewBox="0 0 80.3 72.625" xmlns="http://www.w3.org/2000/svg">
+            <path id="bar1" fill="#aaa" d="m74 5.6499h-67.8c-3.4 0-6.2 2.8-6.2 6.2s2.8 6.2 6.2 6.2h67.9c3.4 0 6.2-2.8 6.2-6.2s-2.8-6.2-6.3-6.2z"/>
+            <path id="bar2" fill="#aaa" d="m74 30.45h-67.8c-3.4 0-6.2 2.8-6.2 6.2s2.8 6.2 6.2 6.2h67.9c3.4 0 6.2-2.8 6.2-6.2s-2.8-6.2-6.3-6.2z"/>
+            <path id="bar3" fill="#aaa" d="m74 55.25h-67.8c-3.4 0-6.2 2.8-6.2 6.2s2.8 6.2 6.2 6.2h67.9c3.4 0 6.2-2.8 6.2-6.2s-2.8-6.2-6.3-6.2z"/>
+            <path id="cross" fill="none" d="m19.175 2.744 20.715 20.816 20.715-20.816c8.4879-8.3869 21.321 4.345 12.833 12.833l-20.715 20.715 20.715 20.715c8.4879 8.4879-4.345 21.321-12.833 12.833l-20.715-20.715-20.715 20.715c-8.4879 8.4879-21.22-4.345-12.833-12.833l20.816-20.715-20.816-20.715c-8.3869-8.4879 4.345-21.22 12.833-12.833z"/>
+            </svg>
+        </div>
+        <div class="menu-wrap">
+            <div class="menu-sidebar">
+                <button id="globemode">Bands</button>
+                <button id="cubemode">Cube</button>
+                <button id="gendermode">Gender</button>
+                <button id="committeemode">Showcase</button>
+                <form id="search">
+                    <input id="namesearch" type="text" placeholder="Search name...">
+                    <button type="submit">Submit</button>
+                    <select id="profession">
+                        <option selected="select">Select profession</option>
+                    </select>
+                    <select id="province">
+                        <option selected="select">Select province</option>
+                    </select>
+                </form>
+                <p>All data records in this visualization are fake. They are generated via a random generation tool.</p>
+                <p>Photos are all free stock photos. To simplify load times for this demo, a limited number of photos are reused.</p>
+                <p>For more information on this viz, check out this <a href="https://www.vslashr.com/2019/01/3d-photo-directory-visualization/" target="_blank">post</a>.</p>
+            </div>
+        </div>
+        
+        <div class="display">
+            <h4 id="text1"></h4>
+            <p id="text2"></p>
+            <p id="text3"></p>
+        </div>
+        
+        <script src="js/jquery-3.3.1.min.js"></script>
+        <script src="js/jquery.auto-complete.min.js"></script>
+        <script src="js/underscore.min.js"></script>
+        <script src="js/TweenMax.min.js"></script>
+        <script src="js/DrawSVGPlugin.min.js"></script>
+        <script src="js/MorphSVGPlugin.min.js"></script>
+        <script src="js/three.min.js"></script>
+        <script src="js/hammer.min.js"></script>
+        <script src="js/papaparse.min.js"></script>
+        <script src="js/banddata.js"></script>
+        <script src="js/chance.min.js"></script>
+        <script src="js/main.js"></script>
+
+    </body>
+</html>
