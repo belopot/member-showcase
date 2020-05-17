@@ -2,6 +2,7 @@
  3d data visualization
 
 ![Bagel](https://github.com/belopot/member-showcase/blob/master/screenshots/1.JPG)
+
 ![Bagel](https://github.com/belopot/member-showcase/blob/master/screenshots/2.JPG)
 
 View the project
